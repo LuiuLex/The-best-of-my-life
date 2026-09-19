@@ -251,7 +251,7 @@ class FloatItem{
     this.el = document.createElement('div');
     if(isPhoto){
       this.el.className = 'photo';
-      this.el.innerHTML = `<div class="inner">${PHOTO_ICONS[Math.floor(Math.random()*PHOTO_ICONS.length)]}</div>`;
+      this.el.innerHTML = `<div class="inner"><img src="${PHOTO_IMAGES[Math.floor(Math.random()*PHOTO_IMAGES.length)]}" alt=""></div>`;
     } else {
       this.el.className = 'floaty' + (Math.random() < 0.5 ? ' alt' : '');
       this.el.textContent = PHRASES[Math.floor(Math.random()*PHRASES.length)];
